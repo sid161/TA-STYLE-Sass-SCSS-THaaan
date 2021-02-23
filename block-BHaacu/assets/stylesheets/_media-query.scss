@@ -1,0 +1,126 @@
+@media screen and (max-width: 1200px) {
+    .container {
+      max-width: 1100px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    html {
+      font-size: 14px;
+    }
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 12px;
+    }
+    .container {
+      max-width: 720px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .sm-align-text-center {
+      text-align: center;
+    }
+    .sm-margin-bottom {
+      margin-bottom: 2rem;
+    }
+
+    .sm-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      .sm-flex-column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+      }
+      .sm-justify-center {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+      .sm-display-block {
+        display: block;
+      }
+      .sm-align-center {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+
+      /* hamburger */
+      .nav {
+        display: none;
+      }
+      .nav-bar {
+        padding: 1rem;
+        width: 100%;
+      }
+      .fa-bars {
+        display: inline-block;
+        font-size: 1.5rem;
+        padding: 0.5rem 0.7rem;
+        background-color: #DC4145;
+        border-radius: 0.2rem;
+        margin-top: 0.2rem;
+        color: #fff;
+        margin-right: 0;
+        position: absolute;
+        right: 2rem;
+      }
+      #toggle:checked ~ .nav {
+        display: inline-block;
+        position: fixed;
+        z-index: 3;
+        background-color: rgba(255, 255, 0, 0.8);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        padding-top: 10rem;
+      }
+      #toggle:checked ~ .nav li {
+        margin-bottom: 5rem;
+      }
+      #toggle:checked ~ .nav a {
+        font-size: 2rem;
+        font-weight: 500;
+        color: maroon;
+      }
+      #toggle:checked ~ .nav .sub-menu-box:hover .submenu {
+        top: 0;
+        margin-left: 10rem;
+        z-index: 2;
+      }
+      #toggle:checked ~ .nav .sub-menu-box:hover .sub-menu li {
+        width: 12rem;
+        background-color: white;
+        margin: 0;
+      }
+      #toggle:checked ~ .brand {
+        position: fixed;
+        z-index: 4;
+        top: 2rem;
+      }
+      #toggle:checked ~ .close {
+        display: inline-block;
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        z-index: 4;
+      }
+      #toggle:checked ~ .close i {
+        font-size: 3rem;
+      }
+      #toggle:checked ~ .bars {
+        display: none;
+      }
+      /* ***** Hero ***** */
+    
